@@ -81,6 +81,9 @@ header a {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
 }
+.grid-column {
+  margin: 20px;
+}
 footer {
   color: white;
   background-image: linear-gradient(
