@@ -6,14 +6,18 @@ body {
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
   font-family: "Poppins", sans-serif;
 }
-
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+}
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
-    url(../media/hamburg-bg.jpg);
+    url("../media/hamburg-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -59,7 +63,7 @@ header a {
   display: inline-block;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
   }
@@ -73,18 +77,59 @@ header a {
     font-size: 12px;
   }
 }
-
-.footer {
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+footer {
+  color: white;
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.9),
+      rgba(39, 32, 68, 0.9)
+    ),
+    url("../media/hamburg-footer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+footer h4 {
+  font-weight: 700px;
+  font-size: 20px;
+  line-height: 30px;
+}
+footer p {
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 0.9;
+}
+footer ul {
+  padding: 0;
+}
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer a {
+  color: white;
+  opacity: 0.7;
+}
+.github {
   text-align: center;
   margin: 0 auto;
   display: block;
   font-family: "Handjet", cursive;
   font-size: 20px;
+  margin-top: 20px;
   margin-bottom: 20px;
+  color: white;
 }
 .foot {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 .foot:hover {
   cursor: pointer;
