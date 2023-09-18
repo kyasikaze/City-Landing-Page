@@ -16,24 +16,31 @@ section {
 }
 .grid {
   display: grid;
-  margin: 0 auto;
+  grid-gap: 64px;
 }
 .grid-column {
   padding: 15px;
 }
 .grid-2-col {
   grid-template-columns: 1fr 1fr;
-  grid-gap: 64px;
   padding: 100px;
 }
 .grid-3-col-main {
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 64px;
+}
+.grid-2-col-fav {
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0;
+  padding: 0;
 }
 .grid-3-col-footer {
   grid-template-columns: 1fr 2fr 2fr;
   grid-gap: 50px;
   padding: 0 20px;
+}
+.embed {
+  width: 100%;
+  aspect-ratio: 1 /1;
 }
 @media (max-width: 960px) {
   header {
@@ -53,6 +60,12 @@ section {
   }
   section {
     padding: 30px;
+  }
+  .card-header img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16 / 9;
   }
 }
 header {
@@ -110,8 +123,11 @@ main img {
   background-size: cover;
   max-width: 500px;
 }
+
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
+  display: block;
+  height: 100%;
 }
 main h2 {
   font-weight: 700;
