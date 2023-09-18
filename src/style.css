@@ -42,32 +42,6 @@ section {
   width: 100%;
   aspect-ratio: 1 /1;
 }
-@media (max-width: 960px) {
-  header {
-    padding: 60px 0;
-  }
-  header h1 {
-    font-size: 45px;
-  }
-  header h2 {
-    font-size: 20px;
-  }
-  header h3 {
-    font-size: 12px;
-  }
-  .grid {
-    grid-template-columns: 1fr;
-  }
-  section {
-    padding: 30px;
-  }
-  .card-header img {
-    display: none;
-  }
-  .embed {
-    aspect-ratio: 16 / 9;
-  }
-}
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
     url("../media/hamburg-bg.jpg");
@@ -262,4 +236,30 @@ footer a {
   cursor: pointer;
   background: black;
   color: greenyellow;
+}
+@media (max-width: 960px) {
+  header {
+    padding: 60px 0;
+  }
+  header h1 {
+    font-size: 48px;
+  }
+  header h2 {
+    font-size: 20px;
+  }
+  header h3 {
+    font-size: 12px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  section {
+    padding: 30px;
+  }
+  .card-header img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16 / 9;
+  }
 }
